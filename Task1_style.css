@@ -1,0 +1,120 @@
+:root {
+	--basic-blue: #5dacec;
+	--basic-dark-blue: #0f69b3;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 50px 0;
+	font-family: "Caveat", "Arial", sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 34px;
+	min-width: 320px;
+}
+
+@media(min-width: 1280px) {
+	body {
+		background: linear-gradient(to right, var(--basic-dark-blue), transparent 25%),
+			linear-gradient(to left, var(--basic-dark-blue), transparent 25%);
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.center {
+	max-width: 760px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.main-heading {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	line-height: 50px;
+}
+
+.footnote {
+	margin: 0 0 70px 0;
+	display: block;
+	line-height: 20px;
+}
+
+.text-link {
+	color: var(--basic-blue);
+	position: relative;
+	display: inline-block;
+}
+
+.text-link::before {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 2px;
+	background-color: var(--basic-blue);
+	bottom: 0;
+	left: 0;
+	transition: width 0.5s;
+}
+
+.text-link:hover::before {
+	width: 100%;
+}
+
+.text-link:active {
+	color: var(--basic-dark-blue);
+}
+
+.text-link:active::before {
+	background-color: transparent;
+}
+
+.index-list {
+	margin: 0;
+	padding: 0 0 0 25px;
+}
+
+.useful-list {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 25px;
+}
+
+.useful-item {
+	position: relative;
+}
+
+.useful-item::before {
+	position: absolute;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: url("img/vs_code.svg");
+	top: 9px;
+	left: -25px;
+}
+
+.image-box {
+	margin: 0;
+}
+
+.image {
+	display: block;
+}
+
+.image-caption {
+	text-align: center;
+	font-size: 18px;
+	line-height: 24px;
+}

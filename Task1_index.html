@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Задача 1. Вёрстка страницы</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+	<link href="Task1_style.css" rel="stylesheet">
+</head>
+
+<body>
+	<article class="center" id="start">
+		<h1 class="main-heading">Обзор Visual Studio Code*</h1>
+		<small class="footnote">*содержание этого обзора практически полностью содрано
+			<a class="text-link" href="https://htmlacademy.ru/blog/boost/tools/vscode">отсюда</a> :)</small>
+		<p>Visual Studio Code — бесплатный и очень популярный редактор кода от Microsoft.</p>
+		<p>Редактор поможет в работе веб-разработчикам и верстальщикам всех уровней. С одной стороны он подходит новичкам,
+			потому что его интерфейс интуитивно прост и понятен. С другой стороны в VS Code встроены много возможностей,
+			которые
+			интересны опытным разработчикам.</p>
+		<p>Скачать VS Code — <a class="text-link" href="https://code.visualstudio.com/">https://code.visualstudio.com</a>
+		</p>
+		<h2>Оглавление</h2>
+		<ol class="index-list">
+			<li><a class="text-link" href="#useful">Полезные материалы</a></li>
+			<li><a class="text-link" href="#first-launch">Первый запуск</a></li>
+			<li><a class="text-link" href="#searching">Поиск</a></li>
+			<li><a class="text-link" href="#git">Git</a></li>
+			<li><a class="text-link" href="#debugger">Отладчик</a></li>
+			<li><a class="text-link" href="#extensions">Расширения</a></li>
+			<li><a class="text-link" href="#main-menu">Главное меню</a></li>
+		</ol>
+		<h3 id="useful">Полезные материалы</h3>
+		<ul class="useful-list">
+			<li class="useful-item">
+				<a class="text-link" href="https://htmlacademy.ru/blog/boost/tutorial/how-to-run-html">Как
+					написать и
+					запустить HTML в VS Code></a>
+			</li>
+			<li class="useful-item">
+				<a class="text-link" href="https://htmlacademy.ru/blog/education/collections/hot-keys">Горячие клавиши VS
+					Code, которые ускорят вашу работу</a>
+			</li>
+			<li class="useful-item">
+				<a class="text-link" href="https://htmlacademy.ru/blog/boost/tools/vscode-addons">Полезные плагины VS Code для
+					верстальщика</a>
+			</li>
+			<li class="useful-item">
+				<a class="text-link" href="https://htmlacademy.ru/blog/boost/tools/editors-for-the-coders">Обзор редакторов
+					Atom, Sublime Text и WebStorm</a>
+			</li>
+		</ul>
+		<h3 id="first-launch">Первый запуск</h3>
+		<p>При запуске редактора в первый раз открывается стартовая страница, на которой описаны все возможности редактора.
+			Все ссылки интерактивные и открывают нужную часть интерфейса или страницу в браузере.</p>
+		<figure class="image-box">
+			<img class="image" src="img/Screenshot_1.png" max-width="740" max-height="364" alt="Стартовая страница VS Code">
+			<figcaption class="image-caption">Так выглядит стартовая страница при первом запуске VS Code</figcaption>
+		</figure>
+		<p>Редактор поддерживает множество языков программирования и легко настраивается под пользователя. Можно установить
+			различные
+			<a class="text-link" href="https://htmlacademy.ru/blog/education/collections/hot-keys">сочетания клавиш и цветовые
+				схемы.</a>
+		</p>
+		<p>Посмотрим интерфейс редактора на примере одного из проектов.</p>
+		<figure class="image-box">
+			<img class="image" src="img/Screenshot_2.png" max-width="740" max-height="364" alt="Интерфейс">
+			<figcaption class="image-caption">Интерфейс рабочего проекта</figcaption>
+		</figure>
+		<p>Основную часть экрана занимает окно с текстовым содержимым файла. В левой части экрана находятся вкладки
+			активного меню, в котором находятся главные функции редактора. Вкладка проводника открывается по умолчанию при
+			запуске программы. В неё выводятся список открытых файлов и каталог открытой папки.</p>
+		<h3 id="searching">Поиск</h3>
+		<p>Следующий пункт — поиск. В поле можно ввести искомое значение, и редактор покажет, в каких местах оно находится.
+			При желании можно поменять значение через поле замены.</p>
+		<figure class="image-box">
+			<img class="image" src="img/Screenshot_3.png" max-width="740" max-height="252" alt="Поиск">
+			<figcaption class="image-caption">Окно поиска</figcaption>
+		</figure>
+		<h3 id="git">Git</h3>
+		<p>VS Code из коробки поддерживает работу с системой контроля версий Git. Можно выполнить базовые операции и
+			посмотреть, как изменились файлы с момента последнего коммита.</p>
+		<p>Настройка Git в Visual Studio Code подробна описана
+			<a class="text-link" href="https://code.visualstudio.com/docs/editor/versioncontrol">в официальной
+				документации</a>.
+		</p>
+		<h3 id="debugger">Отладчик</h3>
+		<p>VS Code отличает от конкурентов наличие встроенного отладчика. После небольшой настройки можно искать баги в коде
+			прямо из редактора — например, поставить точку остановки и наблюдать за выполнением конкретного участка кода.
+			Помимо этого у редактора есть встроенная консоль, в которую может выводиться результат работы или сообщение об
+			ошибке, если что-то пошло не так. Отладчик можно настроить под разные языки и разные задачи.</p>
+		<h3 id="extensions">Расширения</h3>
+		<p>Последний пункт активного меню позволяет устанавливать расширения. В VS Code есть расширения для большинства
+			языков программирования. Верстальщики тоже не обделены — например, мы собрали подборку из
+			<a class="text-link" href="https://htmlacademy.ru/blog/boost/tools/vscode-addons">9&nbsp;полезных плагинов VS
+				Code</a>.
+		</p>
+		<h3 id="main-menu">Главное меню</h3>
+		<p><b>File.</b> В пункте File находятся команды, которые отвечают за работу с файлами рабочей папки. Через неё можно
+			сохранять и открывать файлы, выбирать папки и выполнять другие действия.</p>
+		<p><b>Edit.</b> Через этот пункт можно работать с открытым файлом — отменять последние действия, производить поиск
+			по
+			файлу.
+		</p>
+		<p><b>Selection.</b> В пункте Selection можно найти команды для выделения нужного участка кода.</p>
+		<p><b>View.</b> Открывать различные приложения, встроенные в редактор кода, можно через пункт View. Здесь
+			дублируются пункты активного меню, а ещё здесь можно открыть терминал, настроить элементы интерфейса и другое.</p>
+		<p><b>Go.</b> Через пункт Go можно перемещаться между открытыми файлами и по документу. Также можно разделять
+			рабочую область на части. Это удобно для работы на большом мониторе — можно держать в одном месте разметку и файлы
+			стилей.
+		</p>
+		<p><b>Debug.</b> Здесь собраны команды для отладки скриптов.</p>
+		<p><b>Terminal.</b> В редактор встроен терминал (он же командная строка). Он может выполнять как отдельные задачи,
+			так и выводить командную строку в интерфейс редактора.</p>
+		<p><b>Help.</b> В этом пункте собраны справочные материалы по работе редактора, его основным функциями и общая
+			информация о программе.</p>
+		<a class="text-link" href="#start">Наверх</a>
+	</article>
+</body>
+
+</html>
